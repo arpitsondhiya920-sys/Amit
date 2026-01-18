@@ -1,2 +1,208 @@
-# Amit
+# op
 Hello guys use Mobile Repairing  website 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MobileFix Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            background-color: #444;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav li {
+            margin: 0 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #333;
+        }
+        .services, .prices {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .service, .price-item {
+            flex: 1 1 300px;
+            background-color: #f4f4f4;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            max-width: 400px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav li {
+                margin: 0.5rem 0;
+            }
+            section {
+                padding: 1rem;
+            }
+            .services, .prices {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MobileFix Shop</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#prices">Price List</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h2>Welcome to MobileFix Shop</h2>
+        <p>We specialize in mobile phone repairs, accessories, and more. Your one-stop shop for all mobile needs!</p>
+    </section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Screen Replacement</h3>
+                <p>High-quality screen repairs for all major brands.</p>
+            </div>
+            <div class="service">
+                <h3>Battery Replacement</h3>
+                <p>Fast and reliable battery swaps to keep your phone powered.</p>
+            </div>
+            <div class="service">
+                <h3>Software Updates</h3>
+                <p>Optimize your device with the latest software.</p>
+            </div>
+            <div class="service">
+                <h3>Accessory Sales</h3>
+                <p>Cases, chargers, and more available in-store.</p>
+            </div>
+        </div>
+    </section>
+    <section id="prices">
+        <h2>Price List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Screen Replacement (iPhone)</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Screen Replacement (Android)</td>
+                    <td>$80</td>
+                </tr>
+                <tr>
+                    <td>Battery Replacement</td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td>Software Update</td>
+                    <td>$30</td>
+                </tr>
+                <tr>
+                    <td>Phone Case</td>
+                    <td>$20</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p>Address: 123 Mobile Street, Tech City, TC 12345</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: info@mobilefixshop.com</p>
+    </section>
+    <footer>
+        <p>&copy; 2023 MobileFix Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
